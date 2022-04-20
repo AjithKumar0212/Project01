@@ -57,11 +57,8 @@ public class HomePage extends BaseClass{
 		System.out.println("-------PRICES--------");
 
 //		Collections.
-		
-		
 		for(int x:sd) {
 			System.out.println(x);
-
 		}
 		System.out.println("------mAx & mIn---------");
 		int count=0;
