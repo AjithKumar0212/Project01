@@ -4,7 +4,6 @@ import org.Base.BaseClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-
 public class mainClass extends BaseClass {
 @Test
 private void t2() throws InterruptedException {
