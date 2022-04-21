@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19096" started-at="2022-04-19T18:50:59Z" finished-at="2022-04-19T18:51:19Z">
+  <suite name="Default suite" duration-ms="49483" started-at="2022-04-20T18:48:36Z" finished-at="2022-04-20T18:49:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19096" started-at="2022-04-19T18:50:59Z" finished-at="2022-04-19T18:51:19Z">
+    <test name="Default test" duration-ms="49483" started-at="2022-04-20T18:48:36Z" finished-at="2022-04-20T18:49:26Z">
       <class name="org.Test.mainClass">
-        <test-method status="PASS" signature="t2()[pri:0, instance:org.Test.mainClass@18067a5]" name="t2" duration-ms="17856" started-at="2022-04-19T18:50:59Z" finished-at="2022-04-19T18:51:17Z">
+        <test-method status="PASS" signature="t2()[pri:0, instance:org.Test.mainClass@bbfa04]" name="t2" duration-ms="47034" started-at="2022-04-20T18:48:36Z" finished-at="2022-04-20T18:49:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- t2 -->
-        <test-method status="PASS" signature="am()[pri:0, instance:org.Test.mainClass@18067a5]" name="am" is-config="true" duration-ms="1193" started-at="2022-04-19T18:51:17Z" finished-at="2022-04-19T18:51:19Z">
+        <test-method status="PASS" signature="am()[pri:0, instance:org.Test.mainClass@bbfa04]" name="am" is-config="true" duration-ms="2369" started-at="2022-04-20T18:49:23Z" finished-at="2022-04-20T18:49:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- am -->

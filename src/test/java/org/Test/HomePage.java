@@ -3,6 +3,7 @@ package org.Test;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
@@ -31,7 +32,6 @@ public class HomePage extends BaseClass{
 		threadSleep(2000);
 		List<WebElement> products = productWebElement;
 		Set<String> sss=new TreeSet<>();
-		Set<Integer> sd=new TreeSet<>();
 		for(int i=0;i<products.size();i++) {
 			WebElement pro = products.get(i);
 			String text = pro.getText();
@@ -41,35 +41,29 @@ public class HomePage extends BaseClass{
 		for(String x:sss) {
 			System.out.println(x);
 		}
+		List<Integer> li=new ArrayList<>();
 		List<WebElement> productPrices = priceWebElement;
 		for(int i=0;i<productPrices.size();i++) {
 			WebElement prices = productPrices.get(i);
 			String text = prices.getText();
-			CharSequence subSequence2 = text.subSequence(1,text.length());
-			String stt = subSequence2.toString();
-			//System.out.println(subSequence2);
-			for(int j=0;j<subSequence2.length();j++) {
-				String replace = stt.replace(",","");
-				int parseInt = Integer.parseInt(replace);
-				sd.add(parseInt);
+				if(text.contains("₹")) {
+				text= text.replace("₹","");}
+				if(text.contains(",")) {
+					text= text.replace(",","");}
+				int parseInt = Integer.parseInt(text);
+				li.add(parseInt);
 			}
+		for(int i=0;i<li.size();i++) {
+		System.out.println(li.get(i));
 		}
-		System.out.println("-------PRICES--------");
-
-//		Collections.
-		
-		
-		for(int x:sd) {
-			System.out.println(x);
+		Collections.sort(li);
+		System.out.println(li);
+		System.out.println("min "+Collections.min(li));
+		System.out.println("max "+Collections.max(li));
+		Collections.reverse(li);
+		System.out.println(li);
+		Collections.sort(li,Collections.reverseOrder());
+		System.out.println(li);
+		}
 
 		}
-		System.out.println("------mAx & mIn---------");
-		int count=0;
-		for(int x:sd) {
-			count++;
-			if(count==1) {
-				System.out.println("min price is "+x);
-			}
-			if(count==sd.size()) {
-				System.out.println("max price is "+x);
-			}}}}
